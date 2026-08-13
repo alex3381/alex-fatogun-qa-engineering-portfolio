@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="920" height="520" viewBox="0 0 920 520">
+<rect width="100%" height="100%" rx="28" fill="#101a2c"/>
+<text x="48" y="62" fill="#7f9bb8" font-family="Arial,Segoe UI,sans-serif" font-size="15" font-weight="700" letter-spacing="2">PLAYWRIGHT AUTOMATION</text>
+<text x="48" y="104" fill="#ffffff" font-family="Arial,Segoe UI,sans-serif" font-size="32" font-weight="800">27 / 27 local executions passed</text>
+<text x="48" y="137" fill="#9db2c8" font-family="Arial,Segoe UI,sans-serif" font-size="16">Regression and browser-compatibility evidence are reported separately.</text>
+<text x="58" y="205" fill="#dce8f4" font-family="Arial,Segoe UI,sans-serif" font-size="21" font-weight="700">Chromium regression</text>
+<rect x="58" y="227" width="760" height="38" rx="19" fill="#1e3046"/><rect x="58" y="227" width="760" height="38" rx="19" fill="#4cc9f0"/>
+<text x="830" y="255" text-anchor="end" fill="#ffffff" font-family="Arial,Segoe UI,sans-serif" font-size="21" font-weight="800">24 / 24</text>
+<text x="58" y="328" fill="#dce8f4" font-family="Arial,Segoe UI,sans-serif" font-size="21" font-weight="700">Supported-browser compatibility</text>
+<rect x="58" y="350" width="760" height="38" rx="19" fill="#1e3046"/><rect x="58" y="350" width="760" height="38" rx="19" fill="#25d0a6"/>
+<text x="830" y="378" text-anchor="end" fill="#ffffff" font-family="Arial,Segoe UI,sans-serif" font-size="21" font-weight="800">3 / 3</text>
+<g font-family="Arial,Segoe UI,sans-serif" font-size="16" font-weight="700">
+<rect x="58" y="424" width="138" height="42" rx="21" fill="#172b3f"/><text x="127" y="451" text-anchor="middle" fill="#b9cadd">Firefox</text>
+<rect x="212" y="424" width="138" height="42" rx="21" fill="#172b3f"/><text x="281" y="451" text-anchor="middle" fill="#b9cadd">Chrome</text>
+<rect x="366" y="424" width="138" height="42" rx="21" fill="#172b3f"/><text x="435" y="451" text-anchor="middle" fill="#b9cadd">Edge</text>
+</g>
+<text x="820" y="451" text-anchor="end" fill="#7f9bb8" font-family="Arial,Segoe UI,sans-serif" font-size="13">CI runs a defined regression subset + Firefox smoke</text>
+</svg>

@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="920" height="520" viewBox="0 0 920 520">
+<rect width="100%" height="100%" rx="28" fill="#101a2c"/>
+<text x="48" y="62" fill="#7f9bb8" font-family="Arial,Segoe UI,sans-serif" font-size="15" font-weight="700" letter-spacing="2">INITIAL MANUAL EXECUTION</text>
+<text x="48" y="102" fill="#ffffff" font-family="Arial,Segoe UI,sans-serif" font-size="30" font-weight="800">41 planned tests · 100% executed</text>
+<circle cx="240" cy="270" r="125" fill="none" stroke="#25d0a6" stroke-width="36" stroke-linecap="butt" stroke-dasharray="727.93 57.47" stroke-dashoffset="0.00" transform="rotate(-90 240 270)"/><circle cx="240" cy="270" r="125" fill="none" stroke="#ff6b7a" stroke-width="36" stroke-linecap="butt" stroke-dasharray="38.31 747.09" stroke-dashoffset="-727.93" transform="rotate(-90 240 270)"/><circle cx="240" cy="270" r="125" fill="none" stroke="#f4c95d" stroke-width="36" stroke-linecap="butt" stroke-dasharray="19.16 766.24" stroke-dashoffset="-766.24" transform="rotate(-90 240 270)"/>
+<circle cx="240" cy="270" r="86" fill="#101a2c"/>
+<text x="240" y="267" text-anchor="middle" fill="#ffffff" font-family="Arial,Segoe UI,sans-serif" font-size="54" font-weight="800">92.7%</text>
+<text x="240" y="305" text-anchor="middle" fill="#9db2c8" font-family="Arial,Segoe UI,sans-serif" font-size="17">initial pass rate</text>
+<circle cx="540" cy="205" r="7" fill="#25d0a6"/><text x="562" y="211" fill="#e9f2ff" font-family="Arial,Segoe UI,sans-serif" font-size="25" font-weight="700">Pass</text><text x="790" y="211" text-anchor="end" fill="#ffffff" font-family="Arial,Segoe UI,sans-serif" font-size="29" font-weight="800">38</text><circle cx="540" cy="267" r="7" fill="#ff6b7a"/><text x="562" y="273" fill="#e9f2ff" font-family="Arial,Segoe UI,sans-serif" font-size="25" font-weight="700">Fail</text><text x="790" y="273" text-anchor="end" fill="#ffffff" font-family="Arial,Segoe UI,sans-serif" font-size="29" font-weight="800">2</text><circle cx="540" cy="329" r="7" fill="#f4c95d"/><text x="562" y="335" fill="#e9f2ff" font-family="Arial,Segoe UI,sans-serif" font-size="25" font-weight="700">Blocked</text><text x="790" y="335" text-anchor="end" fill="#ffffff" font-family="Arial,Segoe UI,sans-serif" font-size="29" font-weight="800">1</text>
+<line x1="500" y1="386" x2="812" y2="386" stroke="#263a51"/>
+<text x="540" y="424" fill="#9db2c8" font-family="Arial,Segoe UI,sans-serif" font-size="17">Closure after investigation &amp; retest</text>
+<text x="540" y="458" fill="#ffffff" font-family="Arial,Segoe UI,sans-serif" font-size="19" font-weight="800">40 confirmed Pass · 1 N/R observation</text>
+<text x="540" y="487" fill="#25d0a6" font-family="Arial,Segoe UI,sans-serif" font-size="18" font-weight="700">0 open manual Fail / Blocked</text>
+</svg>
