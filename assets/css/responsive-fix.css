@@ -1,0 +1,971 @@
+/* ==========================================================================
+   Alex Fatogun QA Engineering Portfolio
+   FINAL RESPONSIVE SAFETY LAYER
+   Load this file AFTER assets/css/styles.css
+   ========================================================================== */
+
+/* ---------- Global safeguards ---------- */
+
+html {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+body {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+@supports (overflow: clip) {
+  html,
+  body {
+    overflow-x: clip;
+  }
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+img,
+video,
+svg,
+canvas,
+iframe {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+main,
+header,
+footer,
+section,
+article,
+aside,
+nav,
+figure,
+.shell {
+  min-width: 0;
+}
+
+.hero-grid > *,
+.intro-grid > *,
+.case-hero > *,
+.case-story > *,
+.analytics-heading > *,
+.chart-grid > *,
+.defect-grid > *,
+.evidence-feature > *,
+.automation-panel > *,
+.projects-head > *,
+.project-row > *,
+.evidence-head > *,
+.gallery > *,
+.skills-layout > *,
+.skill-groups > *,
+.background-card > *,
+.contact-grid > *,
+.footer-grid > * {
+  min-width: 0;
+}
+
+.artifact-links a,
+.contact-links a,
+.contact-links span,
+.project-content a,
+.repo-pill,
+.text-action {
+  overflow-wrap: anywhere;
+  word-break: normal;
+}
+
+/* ---------- Large tablets / small laptops ---------- */
+
+@media (max-width: 1100px) {
+  .hero-grid {
+    grid-template-columns: minmax(0, 1fr) !important;
+    gap: 44px;
+  }
+
+  .hero-copy {
+    width: 100%;
+    max-width: 820px;
+  }
+
+  .hero-proof {
+    width: 100%;
+    max-width: 760px;
+    margin-left: 0;
+  }
+
+  .case-hero {
+    grid-template-columns: minmax(0, 1fr) !important;
+  }
+
+  .case-card {
+    width: 100%;
+    max-width: none;
+  }
+
+  .case-media video {
+    min-height: 0;
+    max-height: none;
+    aspect-ratio: 16 / 10;
+    object-fit: contain;
+  }
+}
+
+/* ---------- Tablets ---------- */
+
+@media (max-width: 1000px) {
+  .hero-grid,
+  .intro-grid,
+  .skills-layout,
+  .background-card,
+  .contact-grid,
+  .analytics-heading,
+  .projects-head,
+  .evidence-head,
+  .evidence-feature,
+  .automation-panel,
+  .project-row {
+    grid-template-columns: minmax(0, 1fr) !important;
+  }
+
+  .hero-proof {
+    max-width: 760px;
+  }
+
+  .case-facts {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .case-story {
+    grid-template-columns: 220px minmax(0, 1fr);
+  }
+
+  .defect-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .project-row.reverse .project-visual,
+  .project-row.reverse .project-content {
+    order: initial;
+  }
+
+  .skill-groups {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .evidence-shortcuts {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .footer-grid {
+    grid-template-columns: minmax(0, 1fr) auto;
+  }
+}
+
+/* ---------- Small tablets / large phones ---------- */
+
+@media (max-width: 820px) {
+  .shell {
+    width: min(calc(100% - 32px), var(--max));
+  }
+
+  .section {
+    padding: 86px 0;
+  }
+
+  .hero {
+    padding: 76px 0 70px;
+  }
+
+  .hero-grid {
+    grid-template-columns: minmax(0, 1fr) !important;
+    gap: 38px;
+  }
+
+  .hero-copy,
+  .hero-proof {
+    width: 100%;
+    max-width: 100%;
+    margin-left: 0;
+  }
+
+  .hero h1 {
+    font-size: clamp(44px, 8vw, 60px);
+    line-height: 1;
+  }
+
+  .hero-lead {
+    font-size: 17px;
+    line-height: 1.65;
+  }
+
+  .case-header {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .repo-pill {
+    align-self: flex-start;
+  }
+
+  .case-story {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 14px;
+  }
+
+  .chart-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .chart-card.wide {
+    grid-column: auto;
+  }
+
+  .principles {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
+/* ---------- Phones ---------- */
+
+@media (max-width: 720px) {
+  .shell {
+    width: calc(100% - 28px);
+    max-width: 100%;
+  }
+
+  .section {
+    padding: 76px 0;
+  }
+
+  .nav-shell {
+    min-height: 68px;
+    gap: 12px;
+  }
+
+  .brand {
+    min-width: 0;
+    gap: 10px;
+  }
+
+  .brand > span:last-child {
+    min-width: 0;
+  }
+
+  .brand-mark {
+    flex: 0 0 auto;
+  }
+
+  .nav-toggle {
+    display: block;
+    flex: 0 0 42px;
+  }
+
+  .site-nav {
+    position: absolute;
+    left: 14px;
+    right: 14px;
+    top: 66px;
+    width: auto;
+    max-width: calc(100vw - 28px);
+    display: none;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+    background: #0c192a;
+    border: 1px solid rgba(255,255,255,.10);
+    border-radius: 16px;
+    padding: 8px;
+    box-shadow: 0 22px 60px rgba(0,0,0,.42);
+  }
+
+  .site-nav.open {
+    display: flex;
+  }
+
+  .site-nav a {
+    width: 100%;
+    padding: 12px 13px;
+    border-radius: 10px;
+  }
+
+  .nav-cta {
+    margin-top: 4px;
+    text-align: center;
+  }
+
+  .hero {
+    padding: 58px 0 62px;
+  }
+
+  .hero-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) !important;
+    width: 100%;
+    gap: 34px;
+  }
+
+  .hero-copy,
+  .hero-proof {
+    width: 100%;
+    min-width: 0;
+    max-width: 100%;
+    margin: 0;
+  }
+
+  .availability {
+    display: flex;
+    width: fit-content;
+    max-width: 100%;
+    white-space: normal;
+    line-height: 1.4;
+  }
+
+  .hero h1 {
+    width: 100%;
+    max-width: 100%;
+    margin-top: 12px;
+    font-size: clamp(40px, 12vw, 52px);
+    line-height: 1.02;
+    letter-spacing: -0.045em;
+    overflow-wrap: normal;
+    word-break: normal;
+  }
+
+  .hero h1 em {
+    display: inline;
+  }
+
+  .hero-lead {
+    width: 100%;
+    max-width: none;
+    font-size: 16px;
+    line-height: 1.65;
+  }
+
+  .hero-actions {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    align-items: stretch;
+    width: 100%;
+    gap: 10px;
+    margin-top: 26px;
+  }
+
+  .hero-actions .button {
+    width: 100%;
+  }
+
+  .text-action {
+    display: inline-flex;
+    width: fit-content;
+    max-width: 100%;
+    margin: 4px 0 0;
+  }
+
+  .tool-line {
+    width: 100%;
+    gap: 8px;
+    margin-top: 24px;
+  }
+
+  .hero-proof {
+    padding: 18px;
+    border-radius: 22px;
+  }
+
+  .proof-head {
+    flex-wrap: wrap;
+    gap: 8px 14px;
+  }
+
+  .dashboard-showcase,
+  .showcase-panel,
+  .showcase-frame,
+  .showcase-tags {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .trust-items {
+    display: flex;
+    width: 100%;
+    max-width: 100%;
+    overflow-x: auto;
+    overscroll-behavior-inline: contain;
+    -webkit-overflow-scrolling: touch;
+    padding: 0 8px;
+    scrollbar-width: thin;
+  }
+
+  .trust-items span {
+    flex: 0 0 108px;
+    min-width: 108px;
+  }
+
+  .case-header h2,
+  .section-copy h2,
+  .projects-head h2,
+  .evidence-head h2,
+  .background-card h2,
+  .contact-copy h2,
+  .analytics-heading h3,
+  .project-content h3,
+  .evidence-copy h3,
+  .automation-copy h3 {
+    max-width: 100%;
+    overflow-wrap: normal;
+    word-break: normal;
+  }
+
+  .case-header h2 {
+    font-size: clamp(38px, 10vw, 46px);
+  }
+
+  .case-media {
+    margin: 14px 14px 0;
+  }
+
+  .case-media video {
+    width: 100%;
+    min-height: 0 !important;
+    max-height: none;
+    aspect-ratio: 16 / 10;
+    object-fit: contain;
+  }
+
+  .case-facts {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .case-facts .showcase-frame {
+    margin: 14px 14px 0;
+  }
+
+  .media-meta {
+    flex-direction: column;
+    gap: 2px;
+  }
+
+  .evidence-feature,
+  .automation-panel,
+  .background-card,
+  .project-row {
+    width: 100%;
+    max-width: 100%;
+    padding: 22px;
+  }
+
+  .project-content {
+    padding: 12px 8px 16px;
+  }
+
+  .gallery,
+  .skill-groups,
+  .evidence-shortcuts {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .skill-group:nth-child(odd) {
+    border-right: 0;
+  }
+
+  .contact-buttons {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .contact-buttons .button {
+    width: 100%;
+  }
+
+  .contact-links a {
+    grid-template-columns: 32px minmax(0, 1fr) auto;
+    gap: 10px;
+    padding: 16px;
+  }
+
+  .footer-grid {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+    min-height: 88px;
+    padding: 18px 0;
+  }
+
+  .footer-grid span:nth-child(2) {
+    display: none;
+  }
+
+  .footer-grid a {
+    text-align: left;
+  }
+
+  .lightbox {
+    width: min(94vw, 1100px);
+    max-height: 92vh;
+  }
+
+  .lightbox img {
+    max-height: 86vh;
+  }
+}
+
+/* ---------- Narrow phones ---------- */
+
+@media (max-width: 540px) {
+  .shell {
+    width: calc(100% - 24px);
+  }
+
+  .brand strong {
+    font-size: 14px;
+  }
+
+  .brand small {
+    font-size: 9px;
+  }
+
+  .hero h1 {
+    font-size: clamp(38px, 12vw, 48px);
+  }
+
+  .hero-proof {
+    padding: 14px;
+  }
+
+  .showcase-frame,
+  .hero-proof .showcase-frame,
+  .case-facts .showcase-frame {
+    border-radius: 16px;
+  }
+
+  .showcase-tags span {
+    flex: 1 1 100%;
+    width: 100%;
+  }
+
+  .section-copy h2,
+  .projects-head h2,
+  .evidence-head h2,
+  .background-card h2 {
+    font-size: clamp(32px, 9vw, 38px);
+  }
+
+  .contact-copy h2 {
+    font-size: clamp(34px, 10vw, 40px);
+  }
+
+  .analytics-heading h3 {
+    font-size: clamp(30px, 9vw, 36px);
+  }
+
+  .evidence-feature,
+  .automation-panel,
+  .background-card {
+    padding: 20px;
+  }
+
+  .contact-links a {
+    grid-template-columns: 30px minmax(0, 1fr);
+  }
+
+  .contact-links b {
+    display: none;
+  }
+}
+
+/* ---------- Small phones ---------- */
+
+@media (max-width: 420px) {
+  .shell {
+    width: calc(100% - 20px);
+  }
+
+  .nav-shell {
+    min-height: 64px;
+  }
+
+  .brand-mark {
+    width: 38px;
+    height: 38px;
+    flex-basis: 38px;
+  }
+
+  .brand {
+    gap: 9px;
+  }
+
+  .hero {
+    padding-top: 48px;
+  }
+
+  .hero h1 {
+    font-size: clamp(36px, 11.5vw, 44px);
+  }
+
+  .availability {
+    font-size: 10px;
+  }
+
+  .tool-line span {
+    font-size: 10px;
+  }
+
+  .case-card-head {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  .case-header h2 {
+    font-size: 36px;
+  }
+
+  .repo-pill {
+    width: 100%;
+    text-align: center;
+  }
+
+  .artifact-links {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .artifact-links a {
+    width: 100%;
+    text-align: center;
+  }
+
+  .defect-card {
+    padding: 18px;
+  }
+}
+
+/* ---------- Very narrow compact phones ---------- */
+
+@media (max-width: 360px) {
+  .shell {
+    width: calc(100% - 18px);
+  }
+
+  .brand strong {
+    font-size: 13px;
+  }
+
+  .brand small {
+    font-size: 8px;
+    letter-spacing: .03em;
+  }
+
+  .nav-toggle {
+    width: 40px;
+    height: 40px;
+    flex-basis: 40px;
+  }
+
+  .hero h1 {
+    font-size: 34px;
+  }
+
+  .hero-lead {
+    font-size: 15px;
+  }
+
+  .hero-proof {
+    padding: 12px;
+  }
+
+  .button {
+    padding-left: 14px;
+    padding-right: 14px;
+  }
+}
+
+/* ---------- Short landscape phones ---------- */
+
+@media (max-height: 520px) and (orientation: landscape) {
+  .hero {
+    padding-top: 42px;
+    padding-bottom: 46px;
+  }
+
+  .hero h1 {
+    font-size: clamp(36px, 7vw, 48px);
+  }
+
+  .site-nav {
+    max-height: calc(100vh - 82px);
+    overflow-y: auto;
+  }
+}
+
+/* ---------- Touch devices ---------- */
+
+@media (pointer: coarse) {
+  .button,
+  .nav-toggle,
+  .site-nav a,
+  .repo-pill,
+  .artifact-links a,
+  .contact-links a {
+    min-height: 44px;
+  }
+
+  .button:hover,
+  .repo-pill:hover,
+  .project-row:hover,
+  .chart-card:hover,
+  .gallery-item:hover,
+  .case-media:hover,
+  .hero-proof:hover,
+  .principles > div:hover,
+  .fact:hover,
+  .defect-card:hover {
+    transform: none;
+  }
+}
+
+/* ---------- Print ---------- */
+
+@media print {
+  html,
+  body {
+    overflow: visible !important;
+  }
+}
+
+/* ==========================================================================
+   FINAL MOBILE TYPOGRAPHY & TOUCH POLISH
+   Keeps important text comfortably readable on real phones.
+   ========================================================================== */
+
+@media (max-width: 720px) {
+
+  /* Keep normal reading text at a comfortable mobile size */
+  .hero-lead,
+  .intro-copy > p,
+  .case-sub,
+  .story-body > p,
+  .analytics-heading > p,
+  .project-content > p,
+  .evidence-copy > p,
+  .automation-copy > p,
+  .background-card p,
+  .contact-copy > p {
+    font-size: 16px;
+    line-height: 1.65;
+  }
+
+  /* Small section labels */
+  .eyebrow {
+    font-size: 12px;
+    line-height: 1.4;
+    letter-spacing: 0.12em;
+  }
+
+  /* Location / availability pill */
+  .availability {
+    font-size: 11px;
+    line-height: 1.45;
+    padding: 8px 11px;
+  }
+
+  /* Header identity */
+  .brand strong {
+    font-size: 14px;
+    line-height: 1.15;
+  }
+
+  .brand small {
+    font-size: 10px;
+    line-height: 1.25;
+  }
+
+  /* Hero technology tags */
+  .tool-line span {
+    font-size: 11px;
+    line-height: 1.25;
+    padding: 8px 10px;
+  }
+
+  /* Evidence captions */
+  .showcase-caption strong {
+    font-size: 15px;
+    line-height: 1.35;
+  }
+
+  .showcase-caption > span {
+    font-size: 13px;
+    line-height: 1.55;
+  }
+
+  .showcase-tags span {
+    font-size: 11px;
+    line-height: 1.25;
+    min-height: 34px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* Case study metadata */
+  .case-card-head span,
+  .case-card-head b,
+  .media-meta,
+  .micro {
+    font-size: 11px;
+    line-height: 1.4;
+  }
+
+  /* Repository and evidence links */
+  .artifact-links a,
+  .repo-pill,
+  .project-text-link {
+    font-size: 12px;
+    line-height: 1.35;
+  }
+
+  /* Main buttons */
+  .button {
+    min-height: 46px;
+    font-size: 14px;
+    line-height: 1.25;
+  }
+
+  /* Mobile navigation */
+  .site-nav a {
+    min-height: 46px;
+    font-size: 14px;
+  }
+
+  /* Horizontal lifecycle strip */
+  .trust-items {
+    position: relative;
+    scroll-snap-type: x proximity;
+  }
+
+  .trust-items span {
+    font-size: 11px;
+    line-height: 1.3;
+    scroll-snap-align: start;
+  }
+
+  /* Improve paragraph wrapping */
+  .intro-copy,
+  .story-body,
+  .analytics-heading,
+  .project-content,
+  .evidence-copy,
+  .automation-copy,
+  .background-card,
+  .contact-copy {
+    text-wrap: pretty;
+  }
+}
+
+
+/* ==========================================================================
+   SMALL PHONES — up to 420px
+   ========================================================================== */
+
+@media (max-width: 420px) {
+
+  .availability {
+    font-size: 10.5px;
+  }
+
+  .brand strong {
+    font-size: 13.5px;
+  }
+
+  .brand small {
+    font-size: 9.5px;
+  }
+
+  .tool-line span {
+    font-size: 10.5px;
+  }
+
+  .hero-lead,
+  .intro-copy > p,
+  .case-sub,
+  .story-body > p,
+  .analytics-heading > p,
+  .project-content > p,
+  .evidence-copy > p,
+  .automation-copy > p,
+  .background-card p,
+  .contact-copy > p {
+    font-size: 15.5px;
+  }
+}
+
+
+/* ==========================================================================
+   VERY NARROW PHONES — up to 360px
+   ========================================================================== */
+
+@media (max-width: 360px) {
+
+  .brand strong {
+    font-size: 13px;
+  }
+
+  .brand small {
+    font-size: 9px;
+  }
+
+  .availability {
+    font-size: 10px;
+  }
+
+  .hero-lead,
+  .intro-copy > p,
+  .case-sub,
+  .story-body > p,
+  .analytics-heading > p,
+  .project-content > p,
+  .evidence-copy > p,
+  .automation-copy > p,
+  .background-card p,
+  .contact-copy > p {
+    font-size: 15px;
+  }
+}
+/* ==========================================================================
+   MOBILE LIFECYCLE SWIPE CUE
+   ========================================================================== */
+
+@media (max-width: 720px) {
+
+  .trust-strip {
+    position: relative;
+    padding-bottom: 18px;
+  }
+
+  .trust-strip::after {
+    content: "Swipe →";
+    position: absolute;
+    right: 14px;
+    bottom: 3px;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    opacity: 0.65;
+    pointer-events: none;
+  }
+}
